@@ -11,7 +11,8 @@
     "client": "npm run start --prefix client",
     "watch": "concurrently \"npm run server\" \"npm run client\" ",
     "deploy":"concurrently \"npm run build --prefix client\" \"npm start --prefix server\" ",
-    "test": "concurrently \"npm run test --prefix server\" \"npm run test --prefix client\" "
+    "test": "concurrently \"npm run test --prefix server\" \"npm run test --prefix client\" ",
+    "deploy-cluster":"concurrently \"npm run build --prefix client\" \"npm run cluster --prefix server\" "
   },
   "repository": {
     "type": "git",
