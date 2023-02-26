@@ -6,7 +6,7 @@ const { mongoConnect } = require('./services/mongo');
 const { loadLaunchData } = require('./models/launches.model');
 
 const server = http.createServer(app);
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || process.env.DEV_PORT;
 
 
 async function createServer() {
