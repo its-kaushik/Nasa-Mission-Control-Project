@@ -8,14 +8,10 @@
 
 ### 1. Introduction
 
-It is a full stack web application made using 
-the MERN Stack.
-It has the functionality to schedule a launch
-,show upcoming and historical launches and 
-also cancel a scheduled launch.
-It also has implementation of authentication 
-Authorisation using OAuth and JWT.
-I have used Jest to do Api testing.
+- It is a full stack web application made using the MERN Stack. 
+- It has the functionality to schedule a launch, show upcoming and historical launches and also cancel a scheduled launch.
+- It also has implementation of authentication Authorisation using OAuth and JWT.
+- I have used Jest to do Api testing.
 
 ### 2. Installation
 
