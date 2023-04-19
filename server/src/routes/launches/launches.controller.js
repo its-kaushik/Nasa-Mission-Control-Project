@@ -27,6 +27,8 @@ async function httpAddNewLaunch(req, res) {
             error: "Required Field Missing"
         })
 
+    console.log(launch.launchDate);
+
     launch.launchDate = new Date(launch.launchDate);
     if (isNaN(launch.launchDate))
         return res.status(400).json({

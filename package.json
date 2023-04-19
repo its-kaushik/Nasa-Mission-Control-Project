@@ -6,13 +6,13 @@
   "scripts": {
     "install-server": "npm install --prefix server",
     "install-client": "npm install --prefix client",
-    "install": "concurrently \"npm run install-server\" \"npm run install-client\" ",
+    "install": "npm run install-server && npm run install-client",
     "server": "npm run watch --prefix server",
     "client": "npm run start --prefix client",
-    "watch": "concurrently \"npm run server\" \"npm run client\" ",
-    "deploy":"concurrently \"npm run build --prefix client\" \"npm start --prefix server\" ",
-    "test": "concurrently \"npm run test --prefix server\" \"npm run test --prefix client\" ",
-    "deploy-cluster":"concurrently \"npm run build --prefix client\" \"npm run cluster --prefix server\" "
+    "watch": "npm run server & npm run client",
+    "deploy":"npm run build --prefix client && npm start --prefix server",
+    "test": "npm run test --prefix server && npm run test --prefix client",
+    "deploy-cluster":"npm run build --prefix client && npm run cluster --prefix server"
   },
   "repository": {
     "type": "git",
@@ -24,8 +24,5 @@
   "bugs": {
     "url": "https://github.com/its-kaushik/Nasa-Mission-Control-Project/issues"
   },
-  "homepage": "https://github.com/its-kaushik/Nasa-Mission-Control-Project#readme",
-  "dependencies": {
-    "concurrently": "^7.6.0"
-  }
+  "homepage": "https://github.com/its-kaushik/Nasa-Mission-Control-Project#readme"
 }
